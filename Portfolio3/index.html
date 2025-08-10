@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio — Your Name, Web Developer" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img src="./media/logo.png" alt="profile" class="brand-photo" />
+        <div class="brand-text">
+          <span class="brand-name">Your Name</span>
+          <span class="brand-role">Frontend Developer</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="toggle theme">🌙</button>
+        <button id="burger" class="icon-btn mobile-only" aria-label="open menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile nav
+    <div id="mobile-nav" class="mobile-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>  -->
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-card">
+        <div class="hero-left">
+          <h1>Hello, I'm <span class="accent">Your Name</span></h1>
+          <p class="lead">I build modern, responsive web interfaces with a focus on performance & accessibility.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn outline" href="./media/portFolio-img.jpeg" download>Download Resume</a>
+          </div>
+
+          <ul class="meta-list">
+            <li><strong>Location:</strong> Jamshedpur,Jharkhand (India)</li>
+            <li><strong>Email:</strong> <a href="mailto:xyz@email.com">irahul33343@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-card">
+            <img src="./media/my_image.jpeg" alt="Your Name" class="profile-photo" />
+            <div class="profile-info">
+              <h3>Rahul Kumar Saw</h3>
+              <p>Frontend Developer</p>
+              <div class="socials">
+                <a href="https://github.com/Rahul-Kumar-Saw/Rahul-s-Web" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/rahul-kumar-a8113b267?" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text card">
+          <p>I am a passionate web developer who enjoys turning ideas into user-friendly and accessible web apps. I focus on clean code, responsive layouts, and meaningful animations that improve UX.</p>
+          <p>Currently learning: Advanced React patterns, Performance optimization, and UI architecture.</p>
+        </div>
+
+        <div class="about-stats card">
+          <div class="stat">
+            <h3>3+</h3>
+            <p>Projects shipped</p>
+          </div>
+          <div class="stat">
+            <h3>Intern</h3>
+            <p>Open for internships</p>
+          </div>
+          <div class="stat">
+            <h3>Available</h3>
+            <p>Freelance & Collaboration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section container" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card card">
+          <h4>HTML & CSS</h4>
+          <div class="skill-bar" data-percent="95">
+            <div class="skill-bar-fill"></div>
+            <span class="skill-percent">95%</span>
+          </div>
+          <p class="skill-desc">Semantic markup, responsive layouts, accessibility basics.</p>
+        </div>
+
+        <div class="skill-card card">
+          <h4>JavaScript</h4>
+          <div class="skill-bar" data-percent="85">
+            <div class="skill-bar-fill"></div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <p class="skill-desc">DOM, ES6+, async, fetch, working with APIs.</p>
+        </div>
+
+        <div class="skill-card card">
+          <h4>React</h4>
+          <div class="skill-bar" data-percent="75">
+            <div class="skill-bar-fill"></div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <p class="skill-desc">Components, hooks, routing, state management basics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project card">
+          <div class="project-media">
+            <img src="./media/IMDbPro.png" alt="Project 1">
+          </div>
+          <div class="project-body">
+            <h3>Project One</h3>
+            <p>A short description of the project, main features and tech used (React, Node, TMDB API etc.).</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project-one" target="_blank">Code</a>
+              <a href="#" target="_blank">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project card">
+          <div class="project-media">
+            <img src="media/Zomato-Dashboard.png" alt="Project 2">
+          </div>
+          <div class="project-body">
+            <h3>Project Two</h3>
+            <p>Short description — what problem it solves and what you learned building it.</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project-two" target="_blank">PowerBI</a>
+              <a href="#" target="_blank">Live</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form card" action="#" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="xyz@gmail.com" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+          </div>
+
+          <div class="form-row actions-row">
+            <button class="btn primary" type="submit">Send Message</button>
+            <button class="btn outline" type="reset">Reset</button>
+          </div>
+
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-card card">
+          <h3>Get in touch</h3>
+          <p>If you'd like to collaborate or invite me for an internship, reach out:</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:xyz@gmail.com">irahul33343@gmail.com</a></li>
+            <li><strong>Phone:</strong> +91-XXXXXX1142</li>
+            <li><strong>Location:</strong> Jamshedpur</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name — All rights reserved.</p>
+      <div class="small-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
